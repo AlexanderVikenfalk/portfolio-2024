@@ -18,9 +18,11 @@
         --neutral-grey-light: #666;
         --neutral-grey-dark: #333;
         --accent-yellow: #ffc600;
-        --accent-orange: #ff8000;
 
         --color-font: var(--dark-bg-color);
+        --color-theme-switch-border: var(--dark-bg-color);
+        --color-theme-switch-symbol: var(--dark-bg-color);
+        --color-theme-switch-symbol-hover: var(--accent-yellow);
 
         --bg-color: var(--light-bg-color);
 
@@ -32,19 +34,24 @@
 
         --bg-symbol-inactive: var(--neutral-grey-light);
 
-        --bg-moon-active: var(--accent-yellow);
-        --bg-sun-active: var(--accent-orange);
-
         --spacing-x-small: .25rem;
         --spacing-small: .5rem;
         --spacing-medium: 1rem;
         --spacing-large: 1.5rem;
         --spacing-x-large: 2rem;
+
+        --icon-url-sun: url('../icons/sun-light.svg');
+        --icon-url-moon: url('../icons/half-moon.svg');
+
+        --theme-switcher-symbol-active: var(--icon-url-sun);
     }
 
     :root:has(#themeSwitch:checked) {
         --bg-color: var(--dark-bg-color);
         --color-font: var(--light-bg-color);
+        --theme-switcher-symbol-active: var(--icon-url-moon);
+        --color-theme-switch-border: var(--light-bg-color);
+        --color-theme-switch-symbol: var(--light-bg-color);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -59,12 +66,20 @@
             --bg-knob-activate-light-mode: var(--light-bg-color);
 
             --color-font: var(--light-bg-color);
+
+            --theme-switcher-symbol-active: var(--icon-url-sun);
+            --color-theme-switch-border: var(--light-bg-color);
+
+            --color-theme-switch-symbol: var(--light-bg-color);
         }
 
         :root:has(#themeSwitch:checked) {
             /*--bg-color: var(--light-bg-color);*/
             --bg-color: var(--light-bg-color);
             --color-font: var(--dark-bg-color);
+            --theme-switcher-symbol-active: var(--icon-url-moon);
+            --color-theme-switch-border: var(--dark-bg-color);
+            --color-theme-switch-symbol: var(--dark-bg-color);
         }
 
     }
@@ -129,12 +144,28 @@
 }
 
 @layer elements {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .theme-switch {
+        height: 16px;
+        width: 16px;
+        border: 1px solid var(--color-theme-switch-border);
+        display: block;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0.1rem;
+        cursor: pointer;
+    }
+
     .theme-switch__input,
     .theme-switch__label {
         cursor: pointer;
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .theme-switch__input {
@@ -157,67 +188,44 @@
 
     /*color switch*/
     .theme-switch__label {
-        padding: 5px;
-        margin: 40px auto;
         transition: background-color 500ms ease-in-out;
-        width: 50px;
-        height: 20px;
-        border-radius: 50px;
+        width: 16px;
+        height: 16px;
         text-align: center;
-        background-color: var(--bg-color-switch-active-light-mode);
+        background-color: var(--color-theme-switch-symbol);
+        mask: var(--theme-switcher-symbol-active);
+        /*background-image: var(--theme-switcher-symbol-active);*/
+        mask-repeat: space round,
+        no-repeat;
+        display: inline-block;
     }
 
-    .theme-switch__input:checked ~ .theme-switch__label {
-        background-color: var(--bg-color-switch-active-dark-mode);
+    .theme-switch__label:hover,
+    .theme-switch__label:focus {
+        background-color: var(--color-theme-switch-symbol-hover);
     }
 
-    .theme-switch__label span {
-        position: absolute;
-        bottom: calc(100% + 10px);
-        left: 0;
-        width: 100%;
-    }
-
-    .theme-switch__label::before, .theme-switch__label::after {
-        font-size: 1.5rem;
-        position: absolute;
-        transform: translate3d(0, -50%, 0);
-        top: 50%;
-    }
-
-    .theme-switch__label::before {
-        content: "\2600";
-        right: 100%;
-        margin-right: 7px;
-        color: var(--bg-sun-active);
-    }
-
-    .theme-switch__label::after {
-        content: "\263E";
-        left: 100%;
-        margin-left: 7px;
-        color: var(--bg-symbol-inactive);
+    .theme-switch__label:active {
+        background-color: red;
     }
 
 
-    /*knob - light mode*/
-    .theme-switch__label span::after {
-        position: absolute;
-        top: calc(100% + 14px);
-        left: 4px;
-        width: 20px;
-        height: 20px;
-        content: "";
-        border-radius: 50%;
-        background-color: var(--bg-color);
-        transition: transform 500ms, background-color 500ms;
-    }
-
-    /*knob - dark mode*/
-    .theme-switch__input:checked ~ .theme-switch__label span::after {
-        transform: translateX(25px);
-    }
-
+    /*.theme-switch__label span {*/
+    /*    position: absolute;*/
+    /*    bottom: calc(100% + 10px);*/
+    /*    left: 0;*/
+    /*    width: 100%;*/
+    /*}*/
+    /*.theme-switch__label::before, .theme-switch__label::after {*/
+    /*    font-size: 1.5rem;*/
+    /*    position: absolute;*/
+    /*    transform: translate3d(0, -50%, 0);*/
+    /*    top: 50%;*/
+    /*}*/
+    /*.theme-switch__label::after {*/
+    /*    content: "\263E";*/
+    /*    color: var(--bg-symbol-inactive);*/
+    /*}*/
     /*sun symbol - dark mode*/
     .theme-switch__input:checked ~ .theme-switch__label::before {
         color: var(--bg-symbol-inactive);
@@ -232,12 +240,12 @@
     @media (prefers-color-scheme: dark) {
         /*color switch - dark mode active*/
         .theme-switch__label {
-            background-color: var(--bg-color-switch-active-dark-mode);
+            border-color: var(--bg-color-switch-active-dark-mode);
         }
 
         /*color switch - light mode active*/
         .theme-switch__input:checked ~ .theme-switch__label {
-            background-color: var(--bg-color-switch-active-light-mode);
+            border-color: var(--bg-color-switch-active-light-mode);
         }
 
         /*knob - light mode*/
