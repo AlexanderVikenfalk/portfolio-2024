@@ -42,42 +42,32 @@
         --theme-switcher-symbol-active: var(--icon-url-sun);
     }
 
-    :root:has(#themeSwitch:checked) {
-        --bg-color: var(--dark-bg-color);
-        --color-font: var(--light-bg-color);
+    :root:has(#theme-switch:checked) {
+        --color-bg: var(--color-dark-bg);
+        --color-text: var(--color-light-bg);
         --theme-switcher-symbol-active: var(--icon-url-moon);
-        --color-theme-switch-border: var(--light-bg-color);
-        --color-theme-switch-symbol: var(--light-bg-color);
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --bg-color: var(--dark-bg-color);
-            --bg-color-switch: var(--light-bg-color);
-
-            --bg-color-switch-active-dark-mode: var(--light-bg-color);
-            --bg-color-switch-active-light-mode: var(--dark-bg-color);
-
-            --bg-knob-activate-dark-mode: var(--dark-bg-color);
-            --bg-knob-activate-light-mode: var(--light-bg-color);
-
-            --color-font: var(--light-bg-color);
-
+            --color-bg: var(--color-dark-bg);
+            --color-text: var(--color-light-bg);
             --theme-switcher-symbol-active: var(--icon-url-sun);
-            --color-theme-switch-border: var(--light-bg-color);
-
-            --color-theme-switch-symbol: var(--light-bg-color);
         }
 
-        :root:has(#themeSwitch:checked) {
-            /*--bg-color: var(--light-bg-color);*/
-            --bg-color: var(--light-bg-color);
-            --color-font: var(--dark-bg-color);
+        :root:has(#theme-switch:checked) {
+            --color-bg: var(--color-light-bg);
+            --color-text: var(--color-dark-bg);
             --theme-switcher-symbol-active: var(--icon-url-moon);
-            --color-theme-switch-border: var(--dark-bg-color);
-            --color-theme-switch-symbol: var(--dark-bg-color);
         }
+    }
 
+    @font-face {
+        font-family: 'Epilogue';
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+        src: url('../fonts/Epilogue-Light.woff2') format('woff2');
     }
 
     @font-face {
@@ -98,13 +88,25 @@
 
     html, body {
         margin: 0;
-        padding: 0
+        padding: 0;
     }
 
     body {
-        background-color: var(--bg-color);
-        color: var(--color-font);
-        font-size: var(--fontsize-base);
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-family-header);
+        font-size: var(--font-size-base);
+    }
+
+    @media screen and (min-width: 768px) {
+        body {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                    "content image";
+            align-items: start;
+        }
     }
 
     header, main {
@@ -122,19 +124,23 @@
         text-decoration: none;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
     h1, h2 {
-        font-family: var(--font-family-header);
         margin: 0;
     }
 
     h1 {
         font-weight: var(--font-weight-bold);
-        font-size: var(--fontsize-xlarge);
-        margin-bottom: var(--spacing-x-small)
+        font-size: var(--font-size-xlarge);
+        margin-bottom: var(--spacing-x-small);
     }
 
     h2 {
-        font-size: var(--fontsize-large);
+        font-size: var(--font-size-large);
         font-weight: var(--font-weight-normal);
     }
 }
