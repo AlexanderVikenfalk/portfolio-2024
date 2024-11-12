@@ -3,39 +3,37 @@
 @layer base {
     :root {
         --font-family-header: "Epilogue", sans-serif;
-        --fontsize-base: clamp(1.125rem, 1.4vw, 1.375rem);
-        --fontsize-large: clamp(1.125rem, 1.5vw, 2rem);
-        --fontsize-xlarge: clamp(1.75rem, 3.75vw, 3rem);
-        --fontsize-intro: clamp(1.5rem, 5vw, 2.5rem);
+        --font-size-base: clamp(1.125rem, 1.4vw, 1.375rem);
+        --font-size-large: clamp(1.125rem, 1.5vw, 2rem);
+        --font-size-xlarge: clamp(1.75rem, 3.75vw, 3rem);
+        --font-size-intro: clamp(1.5rem, 5vw, 2.5rem);
+        --font-weight-light: 300;
         --font-weight-normal: 400;
         --font-weight-bold: 700;
 
         --container-padding: clamp(1rem, 5vw, 4rem);
         --container-max: 1280px;
 
-        --light-bg-color: #e6e6e6;
-        --dark-bg-color: #0a0a0d;
-        --neutral-grey-light: #666;
-        --neutral-grey-dark: #333;
-        --accent-yellow: #ffc600;
+        --color-light-bg: #f6f9fa;
+        --color-dark-bg: #0a0a0d;
+        --color-neutral-grey-light: #666;
+        --color-neutral-grey-dark: #333;
+        --color-accent-yellow: #ffc600;
 
-        --color-font: var(--dark-bg-color);
-        --color-theme-switch-border: var(--dark-bg-color);
-        --color-theme-switch-symbol: var(--dark-bg-color);
-        --color-theme-switch-symbol-hover: var(--accent-yellow);
-
-        --bg-color: var(--light-bg-color);
+        --color-bg: var(--color-light-bg);
+        --color-text: #000000;
+        --color-placeholder: #fc6889;
+        --color-splash: #9268fc;
 
         --bg-color-switch-active-dark-mode: var(--light-bg-color);
         --bg-color-switch-active-light-mode: var(--dark-bg-color);
+        --screen-size-small: 640px;
+        --screen-size-medium: 768px;
+        --screen-size-large: 1024px;
+        --screen-size-x-large: 1536px;
 
-        --bg-knob-activate-dark-mode: var(--dark-bg-color);
-        --bg-knob-activate-light-mode: var(--light-bg-color);
-
-        --bg-symbol-inactive: var(--neutral-grey-light);
-
-        --spacing-x-small: .25rem;
-        --spacing-small: .5rem;
+        --spacing-x-small: 0.25rem;
+        --spacing-small: 0.5rem;
         --spacing-medium: 1rem;
         --spacing-large: 1.5rem;
         --spacing-x-large: 2rem;
