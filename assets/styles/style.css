@@ -150,14 +150,37 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
+    }
 
+    .header__logo {
+        max-width: 14vw;
+    }
+
+    .header__wrapper {
+        border-left: 8px solid var(--color-placeholder);
+        padding-left: var(--container-padding)
+    }
+
+    @media screen and (min-width: 768px) {
+        .content-wrapper {
+            grid-area: content;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .image-wrapper {
+            grid-area: image;
+            top: 2rem;
+        }
     }
 
     .theme-switch {
         height: 16px;
         width: 16px;
-        border: 1px solid var(--color-theme-switch-border);
-        display: block;
+        border: 1px solid var(--color-text);
+        display: flex;
         justify-content: flex-end;
         align-items: center;
         padding: 0.1rem;
@@ -174,114 +197,32 @@
         opacity: 0;
     }
 
-    .theme-switch__input:hover + .theme-switch__label, .theme-switch__input:focus + .theme-switch__label {
-
-    }
-
-    /*knob hover - light mode*/
-    .theme-switch__input:hover + .theme-switch__label span::after {
-        /*cursor: pointer;*/
-    }
-
-    /*knob hover - dark mode*/
-    .theme-switch__input:checked:hover + .theme-switch__label span::after {
-        /*cursor: pointer;*/
-    }
-
-    /*color switch*/
     .theme-switch__label {
         transition: background-color 500ms ease-in-out;
         width: 16px;
         height: 16px;
         text-align: center;
-        background-color: var(--color-theme-switch-symbol);
+        background-color: var(--color-text);
         mask: var(--theme-switcher-symbol-active);
-        /*background-image: var(--theme-switcher-symbol-active);*/
-        mask-repeat: space round,
-        no-repeat;
+        mask-repeat: space round, no-repeat;
         display: inline-block;
     }
 
     .theme-switch__label:hover,
     .theme-switch__label:focus {
-        background-color: var(--color-theme-switch-symbol-hover);
+        background-color: var(--color-accent-yellow);
     }
 
-    .theme-switch__label:active {
-        background-color: red;
+    .image-wrapper {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 24px;
     }
 
-
-    /*.theme-switch__label span {*/
-    /*    position: absolute;*/
-    /*    bottom: calc(100% + 10px);*/
-    /*    left: 0;*/
-    /*    width: 100%;*/
-    /*}*/
-    /*.theme-switch__label::before, .theme-switch__label::after {*/
-    /*    font-size: 1.5rem;*/
-    /*    position: absolute;*/
-    /*    transform: translate3d(0, -50%, 0);*/
-    /*    top: 50%;*/
-    /*}*/
-    /*.theme-switch__label::after {*/
-    /*    content: "\263E";*/
-    /*    color: var(--bg-symbol-inactive);*/
-    /*}*/
-    /*sun symbol - dark mode*/
-    .theme-switch__input:checked ~ .theme-switch__label::before {
-        color: var(--bg-symbol-inactive);
-    }
-
-    /*sun symbol - light mode*/
-    .theme-switch__input:checked ~ .theme-switch__label::after {
-        color: var(--bg-moon-active);
-    }
-
-
-    @media (prefers-color-scheme: dark) {
-        /*color switch - dark mode active*/
-        .theme-switch__label {
-            border-color: var(--bg-color-switch-active-dark-mode);
-        }
-
-        /*color switch - light mode active*/
-        .theme-switch__input:checked ~ .theme-switch__label {
-            border-color: var(--bg-color-switch-active-light-mode);
-        }
-
-        /*knob - light mode*/
-        .theme-switch__input:checked ~ .theme-switch__label span::after {
-            transform: translateX(0px);
-            /*background-color: var(--light-bg-color);*/
-            background-color: var(--bg-knob-activate-light-mode);
-        }
-
-        /*knob - dark mode*/
-        .theme-switch__input:not(:checked) ~ .theme-switch__label span::after {
-            transform: translateX(25px);
-            background-color: var(--bg-knob-activate-dark-mode);
-        }
-
-        /*sun symbol - dark mode*/
-        .theme-switch__input:not(:checked) ~ .theme-switch__label::before {
-            color: var(--bg-symbol-inactive);
-        }
-
-        /*sun symbol - light mode*/
-        .theme-switch__input:checked ~ .theme-switch__label::before {
-            color: var(--bg-sun-active);
-        }
-
-        /*moon symbol - light mode*/
-        .theme-switch__input:checked ~ .theme-switch__label::after {
-            color: var(--bg-symbol-inactive);
-        }
-
-        /*moon symbol - dark mode*/
-        .theme-switch__input:not(:checked) ~ .theme-switch__label::after {
-            color: var(--bg-moon-active);
-        }
+    .intro-text {
+        font-size: var(--fontsize-intro);
+        line-height: 1.2;
+        font-weight: var(--font-weight-light)
     }
 }
 
