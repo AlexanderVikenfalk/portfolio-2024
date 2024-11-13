@@ -242,6 +242,127 @@
         justify-content: space-evenly;
         padding: 0 var(--spacing-large);
     }
+
+    .social-links li {
+        padding: var(--spacing-small);
+        display: flex;
+        align-items: center;
+    }
+
+    .social-links li:hover {
+        border-radius: 999px;
+        background: var(--color-placeholder);
+    }
+
+    .placeholder {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+    }
+
+    .experience__list-item {
+        margin-left: calc(-1 * var(--container-padding));
+        margin-right: calc(-1 * var(--container-padding));
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    tr {
+        position: relative;
+
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding: var(--spacing-large) 0;
+        row-gap: var(--spacing-medium);
+        white-space: pre;
+        /*margin: var(--spacing-small) 0;*/
+    }
+
+    tr::after {
+        content: "";
+        position: absolute;
+        left: calc(-1 * var(--container-padding));
+        right: calc(-1 * var(--container-padding));
+        bottom: 0;
+        height: 2px;
+        background-color: black;
+    }
+
+    tr:first-of-type::before {
+        content: "";
+        position: absolute;
+        left: calc(-1 * var(--container-padding));
+        right: calc(-1 * var(--container-padding));
+        top: 0;
+        height: 2px;
+        background-color: black;
+    }
+
+    td {
+        display: table-cell;
+        /*padding: var(--spacing-medium) 0;*/
+    }
+
+    .experience--date {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 640px) {
+        .experience li > div {
+            display: flex;
+            align-items: center;
+        }
+
+        .experience-job-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .experience-employer-wrapper {
+            flex: 1;
+            justify-content: flex-start;
+        }
+
+        .experience-time-wrapper {
+            flex: 1;
+            display: flex;
+            white-space: nowrap;
+            justify-content: flex-start;
+        }
+
+        tr {
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            vertical-align: middle;;
+        }
+
+        td {
+            vertical-align: middle;
+            flex: 1;
+            display: table-cell;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+    }
+
+
 }
 
 @layer utilities {
