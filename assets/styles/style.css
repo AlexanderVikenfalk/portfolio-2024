@@ -78,26 +78,17 @@
     :root {
         --font-family-header: "Epilogue", sans-serif;
         --font-size-base: clamp(1.125rem, 1.4vw, 1.375rem);
-        --font-size-large: clamp(1.125rem, 1.5vw, 2rem);
+        --font-size-medium: clamp(1.125rem, 1.5vw, 2rem);
+        --font-size-large: clamp(1.5rem, 2.5vw, 2.5rem);
         --font-size-xlarge: clamp(1.75rem, 3.75vw, 3rem);
         --font-size-intro: clamp(1.5rem, 5vw, 2.5rem);
         --font-weight-light: 300;
         --font-weight-normal: 400;
         --font-weight-bold: 700;
 
-        --container-padding: clamp(1rem, 5vw, 4rem);
+        --container-padding-small: var(--spacing-medium);
+        --container-padding: clamp(var(--spacing-medium), 5vw, var(--spacing-x-large));
         --container-max: 1280px;
-
-        --color-light-bg: #f6f9fa;
-        --color-dark-bg: #0a0a0d;
-        --color-neutral-grey-light: #666;
-        --color-neutral-grey-dark: #333;
-        --color-accent-yellow: #ffc600;
-
-        --color-bg: var(--color-light-bg);
-        --color-text: #000000;
-        --color-placeholder: #fc6889;
-        --color-splash: #9268fc;
 
         --screen-size-small: 640px;
         --screen-size-medium: 768px;
@@ -109,30 +100,69 @@
         --spacing-medium: 1rem;
         --spacing-large: 1.5rem;
         --spacing-x-large: 2rem;
+        --spacing-xx-large: 2.5rem;
+
+        --shadow-size: 12px;
 
         --icon-url-sun: url('../icons/sun-light.svg');
         --icon-url-moon: url('../icons/half-moon.svg');
+        --icon-invert-amount: 0%;
+
+        /* New OKLCH color system */
+        /* Base hue values */
+        --hue-primary: 280deg; /* Based on your splash color #9268fc */
+        --hue-accent: 50deg; /* Based on your yellow accent #ffc600 */
+        --hue-alert: 350deg; /* Based on your placeholder color #fc6889 */
+
+        /* Derived hues */
+        --hue-contrast: calc(var(--hue-primary) + 180deg);
+
+        /* Lightness levels */
+        --l-high: 0.97; /* Very light */
+        --l-medium-high: 0.8; /* Light grey */
+        --l-medium: 0.5; /* Medium */
+        --l-medium-low: 0.3; /* Dark grey */
+        --l-low: 0.12; /* Very dark */
+
+        /* Chroma (saturation) levels */
+        --c-high: 0.2; /* Vibrant colors */
+        --c-medium: 0.1; /* Medium saturation */
+        --c-low: 0.02; /* Nearly neutral */
+
+        /* Theme colors - Light mode defaults */
+        --color-bg: oklch(var(--l-high) var(--c-low) var(--hue-primary));
+        --color-text: oklch(var(--l-low) var(--c-low) var(--hue-primary));
+        --color-neutral-grey-light: oklch(var(--l-medium-high) var(--c-low) var(--hue-primary));
+        --color-neutral-grey-dark: oklch(var(--l-medium-low) var(--c-low) var(--hue-primary));
+
+        /* Accent colors */
+        --color-accent-yellow: oklch(0.85 0.2 var(--hue-accent));
+        --color-placeholder: oklch(0.7 0.15 var(--hue-alert));
+        --color-splash: oklch(0.6 0.25 var(--hue-primary));
 
         --theme-switcher-symbol-active: var(--icon-url-sun);
     }
 
     :root:has(#theme-switch:checked) {
-        --color-bg: var(--color-dark-bg);
-        --color-text: var(--color-light-bg);
+        --color-bg: oklch(var(--l-low) var(--c-low) var(--hue-primary));
+        --color-text: oklch(var(--l-high) var(--c-low) var(--hue-primary));
         --theme-switcher-symbol-active: var(--icon-url-moon);
+        --icon-invert-amount: 100%;
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --color-bg: var(--color-dark-bg);
-            --color-text: var(--color-light-bg);
+            --color-bg: oklch(var(--l-low) var(--c-low) var(--hue-primary));
+            --color-text: oklch(var(--l-high) var(--c-low) var(--hue-primary));
             --theme-switcher-symbol-active: var(--icon-url-sun);
+            --icon-invert-amount: 100%;
         }
 
         :root:has(#theme-switch:checked) {
-            --color-bg: var(--color-light-bg);
-            --color-text: var(--color-dark-bg);
+            --color-bg: oklch(var(--l-high) var(--c-low) var(--hue-primary));
+            --color-text: oklch(var(--l-low) var(--c-low) var(--hue-primary));
             --theme-switcher-symbol-active: var(--icon-url-moon);
+            --icon-invert-amount: 0%;
         }
     }
 
