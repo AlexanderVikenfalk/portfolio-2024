@@ -306,13 +306,16 @@
 
 @layer elements {
     .header__logo {
-        display: inline-block;
+        display: flex;
+        align-items: center;
         margin: auto 0;
-        border: 1px solid black;
-        width: 34px;
         height: 100%;
         grid-column: 1;
         grid-row: 1 / span 2;
+    }
+
+    .header__logo img {
+        height: 50px
     }
 
     /*.header__logo::before {*/
@@ -336,7 +339,7 @@
     }
 
     .header__title, .header__subtitle {
-        padding-left: 16px;
+        /*padding-left: 16px;*/
     }
 
     .profile-picture figure {
