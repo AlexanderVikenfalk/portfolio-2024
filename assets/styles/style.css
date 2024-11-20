@@ -301,15 +301,14 @@
     }
 
     h1 {
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--font-weight-normal);
         font-size: var(--font-size-xlarge);
-        margin-bottom: var(--spacing-x-small);
     }
 
     h2 {
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-xlarge);
+        font-weight: 700;
         line-height: 1.2;
-        font-weight: var(--font-weight-light);
     }
 
     h3 {
