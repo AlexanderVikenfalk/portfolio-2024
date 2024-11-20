@@ -209,6 +209,20 @@
         box-sizing: border-box
     }
 
+
+    .test {
+        transition: opacity .2s ease;
+        background: linear-gradient(180deg, var(--mainColor) 0, var(--mainColor));
+        color: currentColor;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23EBD1FF' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-position: 0 100%;
+        background-size: auto 6px;
+        background-repeat: repeat-x;
+        text-decoration: none;
+        display: inline;
+        padding-bottom: 2px;
+    }
+
     body {
         background-color: var(--color-bg);
         color: var(--color-text);
