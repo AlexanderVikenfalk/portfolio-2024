@@ -188,6 +188,15 @@
         src: url('../fonts/Epilogue-Regular.woff2') format('woff2');
     }
 
+
+    @font-face {
+        font-family: 'Epilogue';
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+        src: url('../fonts/Epilogue-SemiBold.woff2') format('woff2');
+    }
+
     @font-face {
         font-family: 'Epilogue';
         font-weight: 700;
