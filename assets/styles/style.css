@@ -390,7 +390,27 @@
     }
 
     .introduction-text figure {
-        margin: var(--spacing-large) var(--spacing-small) calc(var(--spacing-large) + var(--shadow-size));
+        position: relative;
+    }
+
+    figure {
+        position: relative;
+    }
+
+    figcaption {
+        padding: 0 0.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: 'DMMono';
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        color: white;
+        font-size: var(--font-size-small);
+    }
+
+    .image-history, .cow-background {
+        margin-bottom: calc(var(--spacing-xx-large) + 6px);
+    }
 
     .history-test:before {
         position: absolute;
