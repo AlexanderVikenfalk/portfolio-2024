@@ -77,6 +77,7 @@
 @layer base {
     :root {
         --font-family-header: "Epilogue", sans-serif;
+        --font-size-small: clamp(0.875rem, 1vw, 1rem);
         --font-size-base: clamp(1.125rem, 1.4vw, 1.375rem);
         --font-size-medium: clamp(1.125rem, 1.5vw, 2rem);
         --font-size-large: clamp(1.5rem, 2.5vw, 2.5rem);
@@ -87,7 +88,7 @@
         --font-weight-bold: 700;
 
         --container-padding-small: var(--spacing-medium);
-        --container-padding: clamp(var(--spacing-medium), 5vw, var(--spacing-x-large));
+        --container-padding: clamp(var(--spacing-large), 5vw, var(--spacing-x-large));
         --container-max: 1280px;
 
         --screen-size-small: 640px;
@@ -108,36 +109,29 @@
         --icon-url-moon: url('../icons/half-moon.svg');
         --icon-invert-amount: 0%;
 
-        /* New OKLCH color system */
-        /* Base hue values */
-        --hue-primary: 280deg; /* Based on your splash color #9268fc */
-        --hue-accent: 50deg; /* Based on your yellow accent #ffc600 */
-        --hue-alert: 350deg; /* Based on your placeholder color #fc6889 */
+        --hue-primary: 280deg;
+        --hue-accent: 50deg;
+        --hue-alert: 350deg;
 
-        /* Derived hues */
         --hue-contrast: calc(var(--hue-primary) + 180deg);
 
-        /* Lightness levels */
-        --l-high: 0.97; /* Very light */
-        --l-medium-high: 0.8; /* Light grey */
-        --l-medium: 0.5; /* Medium */
-        --l-medium-low: 0.3; /* Dark grey */
-        --l-low: 0.12; /* Very dark */
+        --l-high: 0.97;
+        --l-medium-high: 0.8;
+        --l-medium: 0.5;
+        --l-medium-low: 0.3;
+        --l-low: 0.12;
 
-        /* Chroma (saturation) levels */
-        --c-high: 0.2; /* Vibrant colors */
-        --c-medium: 0.1; /* Medium saturation */
-        --c-low: 0.02; /* Nearly neutral */
+        --c-high: 0.2;
+        --c-medium: 0.1;
+        --c-low: 0.02;
 
-        /* Theme colors - Light mode defaults */
         --color-bg: oklch(var(--l-high) var(--c-low) var(--hue-primary));
         --color-text: oklch(var(--l-low) var(--c-low) var(--hue-primary));
         --color-neutral-grey-light: oklch(var(--l-medium-high) var(--c-low) var(--hue-primary));
         --color-neutral-grey-dark: oklch(var(--l-medium-low) var(--c-low) var(--hue-primary));
 
-        /* Accent colors */
         --color-accent-yellow: oklch(0.85 0.2 var(--hue-accent));
-        --color-placeholder: oklch(0.7 0.15 var(--hue-alert));
+        --color-placeholder: oklch(0.699 0.151 359.565);
         --color-splash: oklch(0.6 0.25 var(--hue-primary));
 
         --theme-switcher-symbol-active: var(--icon-url-sun);
