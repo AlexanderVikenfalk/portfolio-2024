@@ -392,6 +392,26 @@
     .introduction-text figure {
         margin: var(--spacing-large) var(--spacing-small) calc(var(--spacing-large) + var(--shadow-size));
 
+    .history-test:before {
+        position: absolute;
+        top: 50%;
+        left: calc(-1 * var(--container-padding));
+        right: calc(-1 * var(--container-padding));
+        bottom: -30px;
+        z-index: -1;
+        content: "";
+        background: #6b78d9;
+    }
+
+    .cow-background:before {
+        position: absolute;
+        top: 50%;
+        left: calc(-1 * var(--container-padding));
+        right: calc(-1 * var(--container-padding));
+        bottom: -30px;
+        z-index: -1;
+        content: "";
+        background: #ff9a79;
     }
 
     @media screen and (min-width: 768px) {
