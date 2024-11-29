@@ -368,35 +368,10 @@
         height: 24px;
         width: 24px;
         padding: var(--spacing-small)
-
     }
 }
 
 @layer elements {
-    .header__logo {
-        display: flex;
-        align-items: center;
-        margin: auto 0;
-        height: 100%;
-        grid-column: 1;
-        grid-row: 1 / span 2;
-    }
-
-    .header__logo img {
-        height: 50px
-    }
-
-    /*.header__logo::before {*/
-    /*    display: block;*/
-    /*    position: absolute;*/
-    /*    left: 14px;*/
-    /*    top: 24px;*/
-    /*    content: "";*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*    border-radius: 50%;*/
-    /*    background-color: red;*/
-    /*}*/
     .header__content-wrapper {
         display: grid;
         grid-template-columns: auto 1fr;
