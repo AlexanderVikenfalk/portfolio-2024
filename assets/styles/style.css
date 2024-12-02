@@ -400,11 +400,6 @@
 @layer elements {
     .header__content-wrapper {
         display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: 1fr auto;
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*padding-left: var(--container-padding)*/
     }
 
     .header__title, .header__subtitle {
@@ -555,15 +550,6 @@
         }
     }
 
-
-    /*@media (hover: none) {*/
-    /*    .footer-icon:hover {*/
-    /*        !* Disable hover styles for touch devices *!*/
-    /*        transform: none;*/
-    /*        box-shadow: none;*/
-    /*        background: none;*/
-    /*    }*/
-    /*}*/
     .experience__list-item {
         margin-left: calc(-1 * var(--container-padding));
         margin-right: calc(-1 * var(--container-padding));
