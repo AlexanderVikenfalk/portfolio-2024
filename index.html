@@ -41,41 +41,40 @@
 <body>
 
 <a id="home"></a>
-<header class="header">
-    <div class="header__wrapper">
-        <div class="header__content-wrapper">
-            <h1 class="header__title"><span class="test" data-text="Alexander Vikenfalk">Alexander Vikenfalk</span></h1>
-        </div>
-        <div class="content-wrapper">
-            <div class="intro">
-                <h2 class="intro-text">Frontend developer and digital piece maker — creating elegant, accessible, and
+<main>
+    <section class="section">
+        <div class="container even-columns">
+            <div class="flow text-center hero__header">
+                <h1 class="heading-1 inline-flex">
+                    <span class="text-decoration-squiggle" data-text="Alexander Vikenfalk">Alexander Vikenfalk</span>
+                </h1>
+            </div>
+            <div class="hero__image">
+                <div class="history__portrait">
+                    <figure>
+                        <picture>
+                            <img
+                                    class="border-frame border-radius-999 box-shadow-1 bg-color-animation"
+                                    aria-hidden="true"
+                                    data-placeholder-image=""
+                                    style="opacity: 1; transition: opacity 500ms linear;"
+                                    decoding="async"
+                                    src="/assets/images/alexander-profile-square.png"
+                                    alt=""
+                            />
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+            <div class="flow text-center hero__intro">
+                <h2 class="heading-2">Frontend developer and digital piece maker — creating elegant, accessible, and
                     performant
                     web
                     solutions.
                 </h2>
             </div>
         </div>
-    </div>
-</header>
-<aside class="image-wrapper profile-picture">
-    <figure>
-        <picture>
-            <img class="border-2 shadow-pink transition-shadow"
-                 sizes="(max-width: 768px) 100vw,
-               (max-width: 1200px) 80vw,
-               70vw"
-                 srcset="
-            /assets/images/alexander-profile-square.png 400w"
-                 src="/assets/images/alexander-profile-square.png"
-                 alt="Alexander Vikenfalk portrait"
-                 loading="eager"
-                 width="1980"
-                 height="2640"
-            >
-        </picture>
-    </figure>
-</aside>
-<main>
+    </section>
     <article class="gap-top-sm introduction-text">
         <h2 id="history" tabindex="-1">History</h2>
         <p>
