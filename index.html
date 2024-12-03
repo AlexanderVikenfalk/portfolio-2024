@@ -68,67 +68,88 @@
             </div>
         </div>
     </section>
-    <article class="gap-top-sm introduction-text">
-        <h2 id="history" tabindex="-1">History</h2>
-        <p>
-            I grew up in the quiet fishing village in the south of Sweden.
-            While most kids were off sailing or playing ice hockey, I spent hours
-            at the only place in the village which had yet received internet: the local library. This was my first
-            encounter with the endless possibilities of technology and the starting signal of a lifelong passion.
-        </p>
+    <section id="history" class="history | section bg-neutral">
+        <div class="container flow">
+            <header class="section-header | flow aw-heading-line-effect margin-block-end-xl">
+                <h2 class="heading-2 history-heading aw-heading-line-effect__background">History</h2>
+            </header>
+            <article class="history__content">
+                <div class="history__info | flow">
+                    <p>
+                        I grew up in the quiet fishing village in the south of Sweden.
+                        While most kids were off sailing or playing ice hockey, I spent hours
+                        at the only place in the village which had yet received internet: the local library. This was my first
+                        encounter with the endless possibilities of technology and the starting signal of a lifelong passion.
+                    </p>
+                    <p>
+                        My interest continued at home, and my dad - a programmer, would try with much effort to teach me programming with C and Pearl.
+                        I realised quickly that my strengths were not in low level programming and terminals but rather in code I
+                        could easily play around with. In high school I quickly got hooked on Flash, HTML, CSS and even Visual Basic
+                        (please forgive me) since they were so easily moldable.
+                    </p>
+                    <p>After high school I got an associates degree in network engineering, a vocational degree in backend
+                        development as well as a vocational degree in Frontend development and I realised that I really liked to build and design websites -
+                        so I just kept on doing that.
+                    </p>
+                </div>
+                <div class="history__portrait">
+                    <div class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
+                        <figure style="max-width: 1024px; display: block;">
+                            <img
+                                    class="aw-border-frame aw-border-radius-2 aw-box-shadow-1"
+                                    alt="Scenic view of Svanshalls's Harbour"
+                                    aria-hidden="true"
+                                    src="./assets/images/svanshall.jpg"
+                                    loading="lazy"
+                                    style="max-width: 100%; display: block; position: static;"
+                            />
+                            <figcaption class="aw-caption-inner aw-border-radius-2 aw-border-frame">The harbour where I grew up</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
 
-        <div class="grayscale-image image-wrapper image-history" data-image-size="large">
-            <figure class="history-test">
-                <img
-                        class="shadow-purple"
-                        src="./assets/images/svanshall.webp"
-                        alt="Scenic view of Svanshalls's Harbour"
-                        sizes="(min-width: 1600px) 70vw,
-               (min-width: 768px) calc(96.8vw - 19px),
-               100vw"
-                        width="3358"
-                        height="2473"
-                        loading="lazy"
-                />
-                <figcaption>The harbour where I grew up</figcaption>
-            </figure>
-        </div>
-        <p>
-            My interest continued at home, and my dad - a programmer, would try with much effort to teach me programming with C and Pearl.
-            I realised quickly that my strengths were not in low level programming and terminals but rather in code I
-            could easily play around with. In high school I quickly got hooked on Flash, HTML, CSS and even Visual Basic
-            (please forgive me) since they were so easily moldable.
-        </p>
-        <p>After high school I got an associates degree in network engineering, a vocational degree in backend
-            development as well as a vocational degree in Frontend development and I realised that I really liked to build and design websites -
-            so I just kept on doing that.
-        </p>
-    </article>
-    <article>
-        <h2 id="current" tabindex="-1">Current</h2>
-        <p>I live in Berlin, Germany since 2016 where I spend most of my time rubber ducking and trying to center DIVs.
-            When I'm not doing that I like to spend time in the kitchen experimenting my way to the perfect Ragu or
-            go hiking in the woods.
-        </p>
-        <div class="grayscale-image image-wrapper " data-image-size="large">
-            <figure class="cow-background">
-                <img
-                        class="shadow-purple"
-                        src="./assets/images/cows.webp"
-                        alt="Curious cows in Sweden"
-                        sizes="(min-width: 1600px) 70vw,
-               (min-width: 768px) calc(96.8vw - 19px),
-               100vw"
-                        width="3358"
-                        height="2473"
-                        loading="lazy"
-                />
-                <figcaption>Curious Swedish cows during a hike</figcaption>
-            </figure>
-        </div>
-        <p>I'm currently available for work. If you would like to get in touch with a job
-            opportunity, feedback or pictures of your pet, email me and we'll chat!
-        </p>
+    <section id="current" class="current | section ">
+        <div class="container | flow">
+            <header class="section-header | flow margin-block-end-xl aw-heading-line-effect">
+                <h2 class="heading-2 aw-heading-line-effect__background">Current</h2>
+            </header>
+
+            <div class="flow">
+                <div class="project">
+                    <div class="project__description | flow">
+                        <article class="flow">
+                            <p>I live in Berlin, Germany since 2016 where I spend most of my time rubber ducking and trying to center DIVs.
+                                When I'm not doing that I like to spend time in the kitchen experimenting my way to the perfect Ragu or
+                                go hiking in the woods.
+                            </p>
+                            <p>I'm currently available for work. If you would like to get in touch with a job
+                                opportunity, feedback or pictures of your pet, email me and we'll chat!
+                            </p>
+                        </article>
+                    </div>
+                    <div class="project__media | flow">
+                        <div class="project__image ">
+                            <div class="gatsby-image-wrapper gatsby-image-wrapper-constrained border-radius-1">
+                                <figure style="max-width: 1682px; display: block;">
+                                    <img
+                                            class="aw-border-frame aw-border-radius-2 aw-box-shadow-1"
+                                            alt=""
+                                            role="presentation"
+                                            aria-hidden="true"
+                                            src="/assets/images/cows.webp"
+                                            style="max-width: 100%; display: block; position: static;"
+                                    />
+                                    <figcaption class="aw-caption-inner aw-border-radius-2 aw-border-frame">Curious cows during a hike</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
     </article>
 
