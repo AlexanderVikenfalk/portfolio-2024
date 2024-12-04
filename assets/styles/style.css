@@ -76,10 +76,6 @@
 @layer base {
     :root {
 
-        --screen-size-small: 640px;
-        --screen-size-medium: 768px;
-        --screen-size-large: 1024px;
-        --screen-size-x-large: 1536px;
         /*#f2f4ff*/
         /*--color-primary-light: oklch(97% 0.02 280);*/
         --color-primary-dark: oklch(var(--l-medium-low) var(--c-low) var(--hue-primary));
@@ -252,15 +248,32 @@
         scroll-behavior: smooth;
     }
 
-    html, body {
+    * {
+        font: inherit;
         margin: 0;
         padding: 0;
     }
-
-    * {
-        box-sizing: border-box
+    img,
+    picture,
+    svg {
+        display: block;
+        max-width: 100%;
     }
-    .test {
+    body {
+        /*background-color: var(--color-neutral-100);*/
+        background-color: var(--color-bg);
+        /*color: var(--color-neutral-900);*/
+        color: var(--color-fg);
+        font-family: "Epilogue", system-ui, sans-serif;
+        font-size: var(--fs-400);
+        font-weight: 300;
+        line-height: 1.6;
+    }
+
+}
+
+@layer elements {
+    .text-decoration-squiggle {
         text-decoration: none;
         position: relative;
         overflow: hidden;
