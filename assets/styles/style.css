@@ -111,8 +111,8 @@
         --accent-dark-mode-100: oklch(34% 0.14 316);
 
         --icon-filter-invert: 100%;
-        --icon-url-sun: url('./assets/icons/sun-light.svg');
-        --icon-url-moon: url('./assets/icons/half-moon.svg');
+        --icon-url-sun: url('../icons/sun-light.svg');
+        --icon-url-moon: url('../icons/half-moon.svg');
 
         --fs-200: clamp(0.69rem, 0.65rem + 0.19vw, 0.8rem);
         --fs-300: clamp(0.83rem, 0.77rem + 0.3vw, 1rem);
