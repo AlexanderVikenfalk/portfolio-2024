@@ -466,7 +466,7 @@
     @media (pointer: coarse) {
         .site-footer__item:active, .theme-switch:active {
             transform: translateY(-2px) scale(1.1);
-            box-shadow: 0 0 var(--color-neutral-0), 0 0 var(--color-neutral-0), inset 0px 0px 0px 2px var(--color-fg), 2px 2px 0px var(--color-fg);
+            box-shadow: 0 0 var(--color-neutral-0), 0 0 var(--color-neutral-0), inset 0 0 0 2px var(--color-fg), 2px 2px 0 var(--color-fg);
             border-radius: 50%;
             background: var(--color-bg);
         }
@@ -475,7 +475,7 @@
     @media (hover: hover) and (pointer: fine) {
         .site-footer__item:hover, .theme-switch:hover {
             transform: translateY(-2px) scale(1.1);
-            box-shadow: 0 0 var(--color-neutral-0), 0 0 var(--color-neutral-0), inset 0px 0px 0px 2px var(--color-fg), 2px 2px 0px var(--color-fg);
+            box-shadow: 0 0 var(--color-neutral-0), 0 0 var(--color-neutral-0), inset 0 0 0 2px var(--color-fg), 2px 2px 0 var(--color-fg);
             border-radius: 50%;
             background: var(--color-icon-hover);
         }
@@ -768,7 +768,7 @@
     .text-decoration-squiggle:hover:after {
         animation-play-state: running;
     }
-    
+
     section:nth-of-type(even) .heading-line-effect__background {
         background-color: var(--color-section-bg);
     }
