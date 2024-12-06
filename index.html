@@ -69,143 +69,159 @@
             </div>
         </div>
     </section>
-    <section id="history" class="history | section bg-neutral">
+    <section class="history section bg-neutral" id="history">
         <div class="container flow">
-            <header class="section-header | flow heading-line-effect margin-block-end-xl">
+            <header class="section-header flow heading-line-effect margin-block-end-xl">
                 <h2 class="heading-2 history-heading heading-line-effect__background">History</h2>
             </header>
             <article class="history__content">
-                <div class="history__info | flow">
+                <div class="flow">
                     <p>
                         I grew up in the quiet fishing village in the south of Sweden.
                         While most kids were off sailing or playing ice hockey, I spent hours
-                        at the only place in the village which had yet received internet: the local library. This was my first
-                        encounter with the endless possibilities of technology and the starting signal of a lifelong passion.
+                        at the only place in the village which had yet received internet: the local library. This was my
+                        first
+                        encounter with the endless possibilities of technology and the starting signal of a lifelong
+                        passion.
                     </p>
                     <p>
-                        My interest continued at home, and my dad - a programmer, would try with much effort to teach me programming with C and Pearl.
-                        I realised quickly that my strengths were not in low level programming and terminals but rather in code I
-                        could easily play around with. In high school I quickly got hooked on Flash, HTML, CSS and even Visual Basic
+                        My interest continued at home, and my dad - a programmer, would try with much effort to teach me
+                        programming with C and Pearl.
+                        I realised quickly that my strengths were not in low level programming and terminals but rather
+                        in code I
+                        could easily play around with. In high school I quickly got hooked on Flash, HTML, CSS and even
+                        Visual Basic
                         (please forgive me) since they were so easily moldable.
                     </p>
-                    <p>After high school I got an associates degree in network engineering, a vocational degree in backend
-                        development as well as a vocational degree in Frontend development and I realised that I really liked to build and design websites -
+                    <p>After high school I got an associates degree in network engineering, a vocational degree in
+                        backend
+                        development as well as a vocational degree in Frontend development and I realised that I really
+                        liked to build and design websites -
                         so I just kept on doing that.
                     </p>
                 </div>
-                <div class="history__portrait">
-                    <div class="image-wrapper image-wrapper-constrained">
-                        <figure style="max-width: 1024px; display: block;">
-                            <img
-                                    class="border-frame border-radius-2 box-shadow-1"
-                                    alt="Scenic view of Svanshalls's Harbour"
-                                    aria-hidden="true"
-                                    src="./assets/images/svanshall.jpg"
-                                    loading="lazy"
-                                    style="max-width: 100%; display: block; position: static;"
-                            />
-                            <figcaption class="caption-inner border-radius-2 border-frame">The harbour where I grew up</figcaption>
-                        </figure>
-                    </div>
+                <div class="history__image image-wrapper">
+
+                    <figure>
+                        <img
+                                alt="Scenic view of Svanshalls's Harbour"
+                                class="border-frame border-radius-2 box-shadow-1"
+                                loading="lazy"
+                                sizes="(max-width: 1000px) 100vw, 1000px"
+                                src="./assets/images/svanshall_kofwnv_c_scale,w_1000.webp"
+                                srcset="
+                                    ./assets/images/svanshall_kofwnv_c_scale,w_200.webp 200w,
+                                    ./assets/images/svanshall_kofwnv_c_scale,w_681.webp 681w,
+                                    ./assets/images/svanshall_kofwnv_c_scale,w_1000.webp 1000w"
+                        />
+                        <figcaption class="caption-inner border-radius-2 border-frame">The harbour where I grew up
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </article>
+        </div>
+    </section>
+
+    <section class="current section" id="current">
+        <div class="container flow">
+            <header class="section-header flow heading-line-effect margin-block-end-xl">
+                <h2 class="heading-2 current-heading heading-line-effect__background">Current</h2>
+            </header>
+            <article class="current__content">
+                <div class="current__text flow ">
+                    <p>I live in Berlin, Germany since 2016 where I spend most of my time rubber ducking and trying to
+                        center DIVs.
+                        When I'm not doing that I like to spend time in the kitchen experimenting my way to the perfect
+                        Ragu or
+                        go hiking in the woods.
+                    </p>
+                    <p>I'm currently available for work. If you would like to get in touch with a job
+                        opportunity, feedback or pictures of your cat, <span class="inline-flex"><a
+                                class="text-decoration-squiggle" data-text="email me"
+                                href="mailto:alexander@vikenfalk.com">email me</a></span> and we'll chat!
+                    </p>
+                </div>
+                <div class="image-wrapper">
+                    <figure>
+                        <img
+                                alt="Cows behind a tent during a hike"
+                                class="border-frame border-radius-2 box-shadow-1"
+                                loading="lazy"
+                                sizes="(max-width: 1000px) 100vw, 1000px"
+                                src="./assets/images/cows_brlqqh_c_scale,w_1000.webp"
+                                srcset="
+                                    ./assets/images/cows_brlqqh_c_scale,w_200.webp 200w,
+                                    ./assets/images/cows_brlqqh_c_scale,w_769.webp 769w,
+                                    ./assets/images/cows_brlqqh_c_scale,w_1000.webp 1000w"
+                        />
+                        <figcaption class="caption-inner border-radius-2 border-frame">Curious cows during a hike
+                        </figcaption>
+                    </figure>
                 </div>
             </article>
         </div>
     </section>
 
-    <section id="current" class="current | section ">
-        <div class="container | flow">
-            <header class="section-header | flow margin-block-end-xl heading-line-effect">
-                <h2 class="heading-2 heading-line-effect__background">Current</h2>
-            </header>
+    <section class="experience section bg-neutral" id="experience">
 
-            <div class="flow">
-                <div class="project">
-                    <div class="project__description | flow">
-                        <article class="flow">
-                            <p>I live in Berlin, Germany since 2016 where I spend most of my time rubber ducking and trying to center DIVs.
-                                When I'm not doing that I like to spend time in the kitchen experimenting my way to the perfect Ragu or
-                                go hiking in the woods.
-                            </p>
-                            <p>I'm currently available for work. If you would like to get in touch with a job
-                                opportunity, feedback or pictures of your cat, <span class="inline-flex"><a class="text-decoration-squiggle" data-text="email me">email me</a></span> and we'll chat!
-                            </p>
-                        </article>
-                    </div>
-                    <div class="project__media | flow">
-                        <div class="project__image ">
-                            <div class="image-wrapper image-wrapper-constrained border-radius-1">
-                                <figure style="max-width: 1682px; display: block;">
-                                    <img
-                                            class="border-frame border-radius-2 box-shadow-1"
-                                            alt=""
-                                            role="presentation"
-                                            aria-hidden="true"
-                                            src="/assets/images/cows.webp"
-                                            style="max-width: 100%; display: block; position: static;"
-                                    />
-                                    <figcaption class="caption-inner border-radius-2 border-frame">Curious cows during a hike</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="experience" class="experience | section bg-neutral">
-
-        <div class="container | flow">
-            <header class="section-header | flow margin-block-end-xl heading-line-effect">
+        <div class="container flow">
+            <header class="section-header flow margin-block-end-xl heading-line-effect">
                 <h2 class="heading-2 heading-line-effect__background">Experience</h2>
             </header>
-            <article class="experience__job padding-block-end-12">
+            <div class="experience__job padding-block-end-12">
                 <dl>
-                    <dd><h4 class="heading-4">One Hiring</h4></dd>
-                    <dd class="experience__role-title"><h5 class="heading-5">Frontend Developer</h5></dd>
-                    <dd class="experience__date"> <h5 class="heading-5">
-                        <time datetime="2024-02">2024</time> -
-                        <time datetime="2024-11">2024</time>
-                    </h5>
+                    <dt><h3 class="heading-3">One Hiring</h3></dt>
+                    <dd class="experience__role-title"><h4 class="heading-4">Frontend Developer</h4></dd>
+                    <dd class="experience__date">
+                        <h4 class="heading-4">
+                            <time datetime="2024-02">2024</time>
+                            -
+                            <time datetime="2024-11">2024</time>
+                        </h4>
                     </dd>
                 </dl>
-            </article>
+            </div>
 
-            <article class="experience__job padding-block-end-12">
+            <div class="experience__job padding-block-end-12">
                 <dl>
-                    <dd  ><h4 class="heading-4">Homeday GmbH</h4></dd>
-                    <dd class="experience__role-title"><h5 class="heading-5">Frontend Developer</h5></dd>
-                    <dd class="experience__date"> <h5 class="heading-5">
-                        <time datetime="2021-08">2021</time> -
-                        <time datetime="2023-11">2023</time>
-                    </h5>
+                    <dt><h3 class="heading-3">Homeday GmbH</h3></dt>
+                    <dd class="experience__role-title"><h4 class="heading-4">Frontend Developer</h4></dd>
+                    <dd class="experience__date">
+                        <h4 class="heading-4">
+                            <time datetime="2021-08">2021</time>
+                            -
+                            <time datetime="2023-11">2023</time>
+                        </h4>
                     </dd>
                 </dl>
-            </article>
+            </div>
 
-            <article class="experience__job padding-block-end-12">
+            <div class="experience__job padding-block-end-12">
                 <dl>
-                    <dd ><h4 class="heading-4">Business Keeper</h4></dd>
-                    <dd class="experience__role-title"><h5 class="heading-5">Frontend Developer</h5></dd>
-                    <dd class="experience__date"><h5 class="heading-5">
-                        <time datetime="2018-05">2018</time> -
-                        <time datetime="2021-08">2021</time>
-                    </h5>
+                    <dt><h3 class="heading-3">Business Keeper</h3></dt>
+                    <dd class="experience__role-title"><h4 class="heading-4">Frontend Developer</h4></dd>
+                    <dd class="experience__date">
+                        <h4 class="heading-4">
+                            <time datetime="2018-05">2018</time>
+                            -
+                            <time datetime="2021-08">2021</time>
+                        </h4>
 
                     </dd>
                 </dl>
-            </article>
+            </div>
 
             <article class="experience__job padding-block-end-12">
                 <dl>
-                    <dd><h4 class="heading-4">EON</h4></dd>
-                    <dd class="experience__role-title"><h5 class="heading-5">Support Technician</h5></dd>
-                    <dd class="experience__date"><h5 class="heading-5">
-                        <time datetime="2012-02">2012</time> -
-                        <time datetime="2016-03">2016</time>
-                    </h5>
+                    <dt><h3 class="heading-3">EON</h3></dt>
+                    <dd class="experience__role-title"><h4 class="heading-4">Support Technician</h4></dd>
+                    <dd class="experience__date">
+                        <h4 class="heading-4">
+                            <time datetime="2012-02">2012</time>
+                            -
+                            <time datetime="2016-03">2016</time>
+                        </h4>
                     </dd>
                 </dl>
             </article>
@@ -214,69 +230,119 @@
     </section>
 </main>
 
-<div class="site-footer">
-    <div class="container">
-        <div class="site-footer__inner">
-            <small class="small">© 2024</small>
-        </div>
+<div class="site-copy">
+    <div class="site-copy__inner container">
+        <small class="small">© 2024</small>
     </div>
 </div>
-<footer class="site-header">
+<footer class="site-footer">
     <div class="container">
-        <div class="site-header__inner">
-            <div class="site-header__brand" role="button" tabindex="0">
-                <a href="#home">
-                    <li class="navigation-links__item" data-tooltip="To The Top">
-                        <img
-                                alt="" loading="lazy" width="24" height="24" decoding="async"
-                                srcset="/assets/icons/arrow-up-circle.svg"
-                        >
-                    </li>
+        <div class="site-footer__inner">
+            <nav class="site-footer__home" role="navigation">
+                <a aria-label="Return to top of page" class='site-footer__item' data-tooltip="To The Top" href="#home"
+                >
+                    <img
+                            alt="Arrow pointing up"
+                            decoding="async"
+                            height="24"
+                            loading="lazy"
+                            src="/assets/icons/arrow-up-circle.svg"
+                            width="24"
+                    >
                 </a>
+            </nav>
+
+            <div class="social">
+                <ul class="social-links flex-group">
+                    <li class="site-footer__item" data-tooltip="Linkedin">
+                        <a
+                                aria-label="Alexander Vikenfalk on LinkedIn"
+                                href="https://www.linkedin.com/in/alexander-vikenfalk/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >
+                            <img
+                                    alt="LinkedIn logo"
+                                    decoding="async"
+                                    height="24"
+                                    loading="lazy"
+                                    src="/assets/icons/linkedin.svg"
+                                    width="24"
+                            >
+                        </a>
+                    </li>
+                    <li class="site-footer__item" data-tooltip="GitHub">
+                        <a
+                                aria-label="GitHub"
+                                href="https://github.com/AlexanderVikenfalk/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >
+                            <img
+                                    alt="GitHub logo"
+                                    decoding="async"
+                                    height="24"
+                                    loading="lazy"
+                                    src="/assets/icons/github.svg"
+                                    width="24"
+                            >
+                        </a>
+                    </li>
+                    <li class="site-footer__item" data-tooltip="Email">
+                        <a
+                                aria-label="Email"
+                                href="mailto:alexander@vikenfalk.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >
+                            <img
+                                    alt="Send email"
+                                    decoding="async"
+                                    height="24"
+                                    loading="lazy"
+                                    src="/assets/icons/email.svg"
+                                    width="24"
+                            >
+                        </a>
+                    </li>
+                    <li class="site-footer__item" data-tooltip="CV">
+                        <a
+                                aria-label="CV"
+                                href="./assets/files/Alexander%20Vikenfalk%20CV%20Website.pdf"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >
+                            <img
+                                    alt="Download CV"
+                                    decoding="async"
+                                    height="24"
+                                    loading="lazy"
+                                    src="/assets/icons/cv.svg"
+                                    width="24"
+                            >
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="primary-navigation">
-                <nav class="primary-navigation__menu">
-                    <ul class="navigation-links | flex-group">
-                        <a target="_blank" aria-label="social media Icon" rel="noopener noreferrer"
-                           href="https://www.linkedin.com/in/alexander-vikenfalk/" >
-                            <li class="navigation-links__item"  data-tooltip="Linkedin">
-                                <img alt="" loading="lazy" width="24" height="24" decoding="async"
-                                     srcset="/assets/icons/linkedin.svg">
-                            </li>
-                        </a>
-                        <a target="_blank" aria-label="social media Icon" rel="noopener noreferrer"
-                           href="https://github.com/AlexanderVikenfalk/" >
-                            <li class="navigation-links__item" data-tooltip="Github">
-                                <img alt="" loading="lazy" width="24" height="24" decoding="async"
-                                     srcset="/assets/icons/github.svg">
-                            </li>
-                        </a>
-
-                        <a target="_blank" aria-label="social media Icon" rel="noopener noreferrer"
-                           href="mailto:alexander@vikenfalk.com"
-                        >
-                            <li class="navigation-links__item" data-tooltip="Email">
-                                <img alt="" loading="lazy" width="24" height="24" decoding="async"
-                                     srcset="/assets/icons/email.svg">
-                            </li>
-                        </a>
-
-                        <a target="_blank" aria-label="social media Icon" rel="noopener noreferrer"
-                           href="./assets/files/Alexander%20Vikenfalk%20CV%20Website.pdf"
-                        >
-                            <li class="navigation-links__item" data-tooltip="CV">
-                                <img alt="" loading="lazy" width="24" height="24" decoding="async"
-                                     srcset="/assets/icons/cv.svg">
-                            </li>
-                        </a>
-                    </ul>
-                </nav>
-            </div>
-            <div class="theme-switch" role="button" tabindex="0" data-tooltip="Toggle Theme">
-                <input class="theme-switch__input" type="checkbox" id="theme-switch" name="theme-switch" >
-                <label class="theme-switch__label" for="theme-switch" >
-                </label>
+            <div aria-checked="false"
+                 aria-label="Toggle light and dark theme" class="theme-switch"
+                 data-tooltip="Toggle Theme"
+                 role="switch"
+                 tabindex="0"
+            >
+                <input
+                        aria-describedby="theme-switch-description"
+                        aria-label="Switch between light and dark mode"
+                        class="theme-switch__input"
+                        id="theme-switch"
+                        name="theme-switch"
+                        type="checkbox"
+                >
+                <label class="theme-switch__label" for="theme-switch"></label>
+                <span class="visually-hidden" id="theme-switch-description">
+        Toggles between light and dark color scheme for improved readability
+    </span>
             </div>
         </div>
     </div>
