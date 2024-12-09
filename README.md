@@ -17,7 +17,7 @@
    Personal portfolio of frontend developer Alexander Vikenfalk.
     <br />
     <br />
-    <a href="https://github.com/AlexanderVikenfalk/portfolio-2024">View Live</a>
+    <a href="https://vikenfalk.com/">View Live</a>
   </p>
 </div>
 
