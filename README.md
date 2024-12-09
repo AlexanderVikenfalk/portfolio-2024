@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/AlexanderVikenfalk/portfolio-2024">
-    <img src="assets/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/images/readme/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Portfolio</h3>
@@ -29,6 +29,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#lighthouse-performance">Lighthouse Performance</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -52,7 +53,7 @@
 ## About The Project
 
 <a href="https://vikenfalk.com/">
-<img src="assets/images/preview.png" alt="Portfolio mockups on desktop and smartphone devices ">
+<img src="assets/images/readme/preview.png" alt="Portfolio mockups on desktop and smartphone devices ">
 </a>
 
 This portfolio was designed with a focused approach, adhering to several key principles:
@@ -68,6 +69,14 @@ The primary objectives were to:
 * Ensure optimal SEO performance
 * Maintain high accessibility standards
 * Create a performant, lightweight web experience
+
+### Lighthouse Performance
+Beneath you can see the end result of the light house report on mobile respective desktop mode.
+
+
+|                   Desktop Lighthouse Score                   |                         Mobile Lighthouse Score                          |
+|:------------------------------------------------------------:|:------------------------------------------------------------------------:|
+| ![Lighthouse Desktop Score](./assets/images/readme/lighthouse_desktop.png) | ![Lighthouse Mobile Score](./assets/images/readme/lighthouse_mobile.png) |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +111,7 @@ You will need a virtual server for the web page to display correctly. Here are s
 
 ## Roadmap
 
-- [ ] Add light house report screenshots to README
+- [x] Add lighthouse report screenshots to README
 - [ ] Develop comprehensive project section
 - [ ] Continuously update portfolio to reflect current skills and projects
 
@@ -137,3 +146,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [css3-url]: https://www.w3.org/Style/CSS/Overview.en.html
 
 [css3-shield]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
+
