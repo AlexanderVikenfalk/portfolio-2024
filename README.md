@@ -1,4 +1,3 @@
-[![project_license][license-shield]][license-url]
 [![HTML 5][html5-shield]][html5-url]
 [![CSS 3][css3-shield]][css3-url]
 
