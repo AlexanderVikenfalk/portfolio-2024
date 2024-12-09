@@ -102,6 +102,7 @@ You will need a virtual server for the web page to display correctly. Here are s
 
 ## Roadmap
 
+- [ ] Add light house report screenshots to README
 - [ ] Develop comprehensive project section
 - [ ] Continuously update portfolio to reflect current skills and projects
 
