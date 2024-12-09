@@ -341,7 +341,9 @@
     }
 
     .experience__job {
+        margin-top:0;
         border-bottom: 1px solid var(--color-table-separator);
+        padding-block-end: var(--space-s);
     }
 
     .experience__job > dl {
@@ -355,10 +357,10 @@
         .experience__job > dl {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-xs);
+            grid-template-rows: 1fr;
             justify-content: space-between;
             align-items: center;
-            padding: var(--space-s) 0;
+            padding: var(--space-2xs) 0;
             transition: opacity 0.4s;
         }
     }
@@ -737,10 +739,6 @@
 
     .margin-block-end-xl {
         margin-block-end: clamp(3rem, 2.72rem + 1.33vw, 3.75rem);
-    }
-
-    .padding-block-end-12 {
-        padding-block-end: 0.75rem;
     }
 
     .small {
