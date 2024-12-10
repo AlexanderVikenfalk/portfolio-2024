@@ -151,6 +151,7 @@
         --color-caption-bg: var(--color-neutral-100);
         --color-bg: oklch(14.71% 0.0168 226.66);
         --color-fg: oklch(95.58% 0.0117 231.65);
+        --color-footer-bg:rgba(8, 17, 21, 0.8);
         --color-section-bg: oklch(17.2% 0.0244 226.11);
         --color-image-border: var(--color-neutral-800);
         --color-icon-hover: var(--color-neutral-500);
@@ -167,6 +168,7 @@
         --color-caption-bg: oklch(95.95% 0.0167 230.9);
         --color-bg: oklch(97.2% 0.0092 232.36);
         --color-fg: oklch(17.06% 0.016 227.24);
+        --color-footer-bg:rgba(233, 242, 247, 0.8);
         --color-section-bg: oklch(95.95% 0.0167 230.9);
         --color-image-border: var(--color-neutral-200);
         --color-icon-hover: var(--color-primary-950);
@@ -186,6 +188,7 @@
             --color-caption-bg: oklch(95.95% 0.0167 230.9);
             --color-bg: oklch(97.2% 0.0092 232.36);
             --color-fg: oklch(17.06% 0.016 227.24);
+            --color-footer-bg:rgba(233, 242, 247, 0.8);
             --color-section-bg: oklch(95.95% 0.0167 230.9);
             --color-image-border: var(--color-neutral-200);
             --color-icon-hover: var(--color-primary-950);
@@ -203,6 +206,7 @@
             --color-caption-bg: var(--color-neutral-100);
             --color-bg: oklch(14.71% 0.0168 226.66);
             --color-fg: oklch(95.58% 0.0117 231.65);
+            --color-footer-bg:rgba(8, 17, 21, 0.8);
             --color-section-bg: oklch(17.2% 0.0244 226.11);
             --color-image-border: var(--color-neutral-800);
             --color-icon-hover: var(--color-neutral-500);
@@ -412,7 +416,7 @@
     }
 
     .site-footer {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: var(--color-footer-bg);
         padding: var(--space-xs) var(--space-2xs-xs);
         position: sticky;
         border-top: 1px solid var(--color-image-border);
