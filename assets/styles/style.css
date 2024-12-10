@@ -151,7 +151,7 @@
         --color-caption-bg: var(--color-neutral-100);
         --color-bg: oklch(14.71% 0.0168 226.66);
         --color-fg: oklch(95.58% 0.0117 231.65);
-        --color-footer-bg:rgba(8, 17, 21, 0.8);
+        --color-footer-bg:rgba(8, 17, 21, 0.6);
         --color-section-bg: oklch(17.2% 0.0244 226.11);
         --color-image-border: var(--color-neutral-800);
         --color-icon-hover: var(--color-neutral-500);
@@ -539,17 +539,33 @@
     .theme-switch::before {
         --translate-y: calc(-100% - var(--arrow-size));
         content: attr(data-tooltip);
-        backdrop-filter: blur(8px);
         padding: var(--space-2xs);
-        border-radius: 1rem;
+        border-radius: 0.75rem;
         text-align: center;
         width: max-content;
         white-space: nowrap;
         color: var(--color-fg);
-        background: var(--tooltip-color);
+        background: var(--color-bg);
         font-size: var(--fs-300);
         overflow: hidden;
         text-overflow: ellipsis;
+        min-width: var(--space-xl);
+        box-shadow:
+                0 0 0 1px var(--color-image-border);
+    }
+
+    .site-footer__item::after,
+    .theme-switch::after {
+        --translate-y: calc(-1 * var(--arrow-size));
+        --arrow-border-color: rgba(255, 255,255, 0.2); /* Soft border color */
+        content: '';
+
+        border: var(--arrow-size) solid transparent;
+        border-top-color: var(--color-bg);
+        filter:
+                drop-shadow(1px 1px 0 var(--color-image-border))
+                drop-shadow(-1px 1px 0 var(--color-image-border))
+                drop-shadow(0 -2px 0 var(--color-bg))
     }
 
     .site-footer__item:hover::before,
@@ -572,15 +588,6 @@
         .theme-switch:focus-within::after {
             --scale: 0;
         }
-    }
-
-    .site-footer__item::after,
-    .theme-switch::after {
-        --translate-y: calc(-1 * var(--arrow-size));
-        content: '';
-        border: var(--arrow-size) solid transparent;
-        border-top-color: var(--tooltip-color);
-        transform-origin: top center;
     }
 }
 
