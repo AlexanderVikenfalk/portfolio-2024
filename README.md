@@ -1,5 +1,7 @@
+[![Vercel][vercel-shield]][vercel-url]
 [![HTML 5][html5-shield]][html5-url]
 [![CSS 3][css3-shield]][css3-url]
+[![License][license-shield]][license-url]
 
 <a id="readme-top"></a>
 
@@ -31,6 +33,7 @@
       <ul>
         <li><a href="#lighthouse-performance">Lighthouse Performance</a></li>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#deployed-with">Deployed With</a></li>
       </ul>
     </li>
     <li>
@@ -82,6 +85,10 @@ Beneath you can see the end result of the light house report on mobile respectiv
 
 [![HTML 5][html5-shield]][html5-url]
 [![CSS 3][css3-shield]][css3-url]
+
+### Deployed With
+
+[![Vercel][vercel-shield]][vercel-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,8 +142,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [license-url]: https://github.com/AlexanderVikenfalk/portfolio-2024/blob/main/LICENSE
 
-[product-screenshot]: images/screenshot.png
-
 [html5-url]: https://www.w3.org/html/
 
 [html5-shield]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
@@ -144,4 +149,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [css3-url]: https://www.w3.org/Style/CSS/Overview.en.html
 
 [css3-shield]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
+
+[vercel-url]: https://www.vercel.com
+
+[vercel-shield]: https://deploy-badge.vercel.app/vercel/portfolio-2024-five-lime?style=for-the-badge
+
 
