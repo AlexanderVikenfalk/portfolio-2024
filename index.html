@@ -38,14 +38,15 @@
 <body>
 <a id="home"></a>
 <main>
-    <section class="hero section" id="hero">
-        <div class="container even-columns">
+    <section class="hero section margin-block-xxl" id="hero">
+        <div class="container flex">
+            <div class="even-columns">
             <div class="hero__image">
                 <figure>
-                    <picture>
+                    <picture class="container-inner">
                         <img
                                 alt="profile picture of Alexander Vikenfalk"
-                                class="border-frame-round border-round box-shadow-2 bg-color-animation"
+                                class="border-double border-round border-white bg-polka-dots box-shadow-3"
                                 decoding="async"
                                 loading="eager"
                                 sizes="(max-width: 1000px) 100vw, 1000px"
@@ -214,13 +215,14 @@
         </div>
         </div>
     </section>
-    <section class="history section bg-neutral" id="history">
+
+    <section class="history section margin-block-xxl" id="history">
         <div class="container flow">
-            <header class="section-header flow heading-line-effect margin-block-end-xl">
-                <h2 class="heading-2 history-heading heading-line-effect__background">History</h2>
+            <header class="section-header flow margin-block-end-xl">
+                <h2 class="heading-2 history-heading swirly-arrow bg-blue padding-x-1 inline-block relative">History</h2>
             </header>
             <article class="history__content">
-                <div class="flow">
+                <div class="flow relative">
                     <p>
                         I grew up in the quiet fishing village in the south of Sweden.
                         While most kids were off sailing or playing ice hockey, I spent hours
@@ -246,11 +248,10 @@
                     </p>
                 </div>
                 <div class="history__image image-wrapper">
-
-                    <figure>
+                    <figure class="border-radius-1 border-1 bg-blue card box-shadow-2">
                         <img
+                                class="border-1 aspect-ratio-profile"
                                 alt="Scenic view of Svanshalls's Harbour"
-                                class="border-frame  box-shadow-1"
                                 loading="lazy"
                                 sizes="(max-width: 1000px) 100vw, 1000px"
                                 src="./assets/images/svanshall_kofwnv_c_scale,w_1000.webp"
@@ -259,7 +260,7 @@
                                     ./assets/images/svanshall_kofwnv_c_scale,w_681.webp 681w,
                                     ./assets/images/svanshall_kofwnv_c_scale,w_1000.webp 1000w"
                         />
-                        <figcaption class="caption-inner border-frame">The harbour where I grew up
+                        <figcaption class="caption-inner" >The harbour where I grew up
                         </figcaption>
                     </figure>
                 </div>
@@ -349,10 +350,10 @@
                     </p>
                 </div>
                 <div class="image-wrapper">
-                    <figure>
+                    <figure class="border-radius-1 border-1 card box-shadow-2 bg-peach">
                         <img
                                 alt="Cows behind a tent during a hike"
-                                class="border-frame box-shadow-1"
+                                class="border-1 aspect-ratio-landscape"
                                 loading="lazy"
                                 sizes="(max-width: 1000px) 100vw, 1000px"
                                 src="./assets/images/cows_brlqqh_c_scale,w_1000.webp"
@@ -361,7 +362,7 @@
                                     ./assets/images/cows_brlqqh_c_scale,w_769.webp 769w,
                                     ./assets/images/cows_brlqqh_c_scale,w_1000.webp 1000w"
                         />
-                        <figcaption class="caption-inner border-frame">Curious cows during a hike
+                        <figcaption class="caption-inner">Curious cows during a hike
                         </figcaption>
                     </figure>
                 </div>
