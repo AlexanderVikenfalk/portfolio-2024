@@ -89,14 +89,33 @@
         --color-neutral-50: oklch(5% 0 264);
         --color-neutral-0: oklch(0 0 264);
 
-        --accent-800: oklch(0.78 0.14 0);
-        --accent-700: oklch(0.78 0.14 20);
-        --accent-600: oklch(0.78 0.14 56);
-        --accent-400: oklch(0.78 0.14 114);
-        --accent-500: oklch(0.78 0.14 76);
-        --accent-300: oklch(0.78 0.14 132);
-        --accent-200: oklch(0.78 0.14 234);
-        --accent-100: oklch(0.78 0.14 318);
+        /*--accent-800: oklch(0.78 0.14 0);*/
+        /*--accent-700: oklch(0.78 0.14 20);*/
+        /*--accent-600: oklch(0.78 0.14 56);*/
+        /*--accent-400: oklch(0.78 0.14 114);*/
+        /*--accent-500: oklch(0.78 0.14 76);*/
+        /*--accent-300: oklch(0.78 0.14 132);*/
+        /*--accent-200: oklch(0.78 0.14 234);*/
+        /*--accent-100: oklch(0.78 0.14 318); */
+
+        /*#FFC9F0*/
+        --accent-900: #8CFFAD;
+        --accent-800: oklch(89.48% 0.07886862083483745 336.4736891030262);
+        --accent-700: #8CA5FF;
+        --accent-600: #FF8CDE;
+        --accent-550: #fdfd96;
+        /*FFE68C*/
+        --accent-500: oklch(92.63% 0.1134 94.36);
+        --accent-400: #ABFF9D;
+        --accent-300: #FFC09D;
+        /*9DDCFF*/
+        --accent-200: oklch(86.41% 0.0802664862424282 233.24785956339008);
+        --accent-100: #F19DFF;
+
+        --accent-muted-800: #FFE2F3;
+        --accent-muted-300: #ADFACE;
+        --accent-muted-200: #B3D6FF;
+        --accent-muted-100: #D9BEFF;
 
         --accent-dark-mode-800: oklch(34% 0.14 13);
         --accent-dark-mode-200: oklch(34% 0.14 240);
