@@ -126,8 +126,8 @@
         --icon-url-sun: url('../icons/sun-light.svg');
         --icon-url-moon: url('../icons/half-moon.svg');
 
-        --font-primary: "Epilogue", system-ui, sans-serif;
-        --font-secondary: "DMMono", "Courier New", Courier, monospace;
+        --font-primary: "Polysans", system-ui, sans-serif;
+        --font-secondary: "Polysans", "Courier New", Courier, monospace;
 
         --fs-200: clamp(0.69rem, 0.65rem + 0.19vw, 0.8rem);
         --fs-250: clamp(0.76rem, 0.71rem + 0.25vw, 0.9rem);
@@ -238,6 +238,38 @@
             --icon-filter-invert: 100;
             --color-table-separator: var(--color-neutral-900);
         }
+    }
+
+    @font-face {
+        font-family: 'Polysans';
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+        src: url('../fonts/Polysans-Bold.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Polysans';
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+        src: url('../fonts/Polysans-SemiBold.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Polysans';
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src: url('../fonts/Polysans-Regular.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'Polysans';
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+        src: url('../fonts/Polysans-Light.woff2') format('woff2');
     }
 
     @font-face {
