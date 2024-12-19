@@ -589,27 +589,67 @@
     }
 
     .experience__job {
-        margin-top:0;
-        border-bottom: 1px solid var(--color-table-separator);
-        padding-block-end: var(--space-s);
+        display: block;
+        position: relative;
+        padding: var(--space-s) var(--space-s) var(--space-s) 40px; /* Left padding for the arrow */
+        cursor: pointer;
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.2s ease;
     }
 
-    .experience__job > dl {
+    .experience__job:not(:last-of-type) {
+        border-bottom: 3px solid black;
+    }
+
+    .experience__job::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        background: url('../icons/arrow-right.svg') no-repeat center / contain;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .experience__job:hover {
+        color: var(--color-neutral-700);
+    }
+
+    .experience__job:hover::before {
+        opacity: 1;
+        transform: translateY(-50%) translateX(-5px);
+    }
+
+    .experience__job .experience__job-list {
         display: grid;
         gap: var(--space-3xs-2xs);
-        grid-template-rows: auto auto;
         grid-template-columns: 1fr;
+        transition: transform 0.2s ease;
+    }
+
+    .experience__job:hover .experience__job-list {
+        transform: translateX(10px);
+    }
+
+    .experience__job :is(.experience__role-title, .experience__date) {
+        opacity: 0.8;
+    }
+
+    .experience__job .experience__date {
+        opacity: 0.6;
     }
 
     @media screen and (min-width: 45em) {
-        .experience__job > dl {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+        .experience__job .experience__job-list {
+            grid-template-columns: 1.4fr 1fr 1fr;
             grid-template-rows: 1fr;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             padding: var(--space-2xs) 0;
-            transition: opacity 0.4s;
         }
     }
 
@@ -619,6 +659,48 @@
 
     .experience__date {
         opacity: 0.6;
+    }
+    .experience__job {
+        display: block; /* Make the link behave like a block element */
+        text-decoration: none; /* Remove default underline */
+        color: inherit; /* Inherit text color */
+        position: relative;
+        padding-left: 30px; /* Space for the arrow */
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+
+    /* Add arrow with pseudo-element */
+    .experience__job::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-image: url('../icons/arrow-right.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .experience__job:hover::before {
+        opacity: 1;
+        transform: translateY(-50%) translateX(-5px);
+    }
+
+    .experience__job:hover {
+        color: var(--color-neutral-700); /* Optional hover color change */
+    }
+
+    .experience__job .experience__job-list {
+        transition: transform 0.2s ease;
+    }
+
+    .experience__job:hover .experience__job-list {
+        transform: translateX(10px);
     }
 
     @media screen and (min-width: 45em) {
