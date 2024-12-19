@@ -716,8 +716,8 @@
     }
 
     .theme-switch {
-        width: 40px;
-        height: 40px;
+        width: 46px;
+        height: 46px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -735,8 +735,8 @@
     }
 
     .theme-switch__label {
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
         text-align: center;
         background-color: var(--color-fg);
         mask: var(--theme-switcher-symbol-active);
