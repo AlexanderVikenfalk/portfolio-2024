@@ -824,8 +824,45 @@
         display: inline-flex;
     }
 
-    .bg-neutral {
-        background-color: var(--color-section-bg);
+    .inline-block {
+        display: inline-block;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .aspect-ratio-profile {
+        aspect-ratio: 2 / 3;
+    }
+
+    .aspect-ratio-landscape {
+    aspect-ratio: 16/9;
+}
+
+
+    .bg-peach {
+        background-color: var(--accent-700);
+    }
+
+    .bg-blue {
+        background-color: var(--accent-200);
+    }
+
+    .bg-purple{
+        background-color: var(--accent-100);
+    }
+
+    .bg-green {
+        background-color: var(--accent-300);
+    }
+
+    .bg-yellow {
+        background-color: var(--accent-550);
+    }
+
+    .bg-primary {
+        background-color: var(--color-bg);
     }
 
     .bg-neutral-alt {
