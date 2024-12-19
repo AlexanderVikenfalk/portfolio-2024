@@ -553,6 +553,22 @@
         list-style: none;
     }
 
+    .swirly-arrow:before {
+            content: "";
+            position: absolute;
+            right: -6rem;
+            top: 100%;
+            width: 80px;
+            height: 80px;
+            background: url('../icons/swirly-arrow.svg') no-repeat center / contain;
+            transform: translateY(-50%);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .history__image {
+        max-width: 22rem;
+    }
+
     .history__content, .current__content {
         grid-row-gap: var(--space-l);
         display: grid;
