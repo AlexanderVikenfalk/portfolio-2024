@@ -719,24 +719,6 @@
         }
     }
 
-    .site-copy {
-        color: var(--color-fg);
-        padding: var(--space-m) 0;
-    }
-
-    .site-copy__inner {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-s);
-    }
-
-    @media screen and (min-width: 60em) {
-        .site-copy__inner {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
     .social-links img, .site-footer__home img {
         filter: invert(var(--icon-filter-invert));
     }
