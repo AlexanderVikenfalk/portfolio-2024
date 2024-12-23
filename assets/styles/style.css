@@ -1090,6 +1090,21 @@
         }
     }
 
+.bg-polka-dots{
+    background-image:
+            radial-gradient(rgb(0, 0, 0) 10%, transparent 10%),
+            radial-gradient(rgb(0, 0, 0) 10%, transparent 10%);
+    background-position: 0px 0px, 16px 16px;
+    background-size: 32px 32px;
+    background-color: var(--accent-700) ;
+}
+
+    .bg-grid-yellow{
+        border: 3px solid var(--accent-500);
+        background-image: linear-gradient(var(--accent-500) 3px, transparent 3px), linear-gradient(90deg, var(--accent-500)  3px, transparent 3px);
+        background-size: 1.4em 1.4em;
+    }
+
     .heading-1 {
         font-size: var(--fs-800);
         font-weight: 600;
