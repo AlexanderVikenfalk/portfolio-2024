@@ -1164,6 +1164,31 @@
         object-fit: cover;
     }
 
+    .padding-0 {
+        padding: var(--space-xs);
+    }
+
+    .padding-1 {
+        padding: var(--space-m) var(--space-l);
+    }
+
+    .padding-x-1{
+      padding: 0 0.6rem
+    }
+
+    .padding-block-s{
+        padding-block: var(--space-s);
+        /*padding-block: clamp(3rem, 2.72rem + 1.33vw, 3.75rem);*/
+    }
+
+    .margin-block-xl {
+        margin-block: clamp(3rem, 2.72rem + 1.33vw, 3.75rem);
+    }
+
+    .margin-block-xxl{
+        margin-block: var(--space-3xl)
+    }
+
     .margin-block-end-xl {
         margin-block-end: clamp(3rem, 2.72rem + 1.33vw, 3.75rem);
     }
