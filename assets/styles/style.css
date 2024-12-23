@@ -1005,6 +1005,39 @@
         box-shadow: var(--color-box-shadow) 6px 6px 0 0;
     }
 
+    .box-shadow-3{
+        box-shadow: var(--color-box-shadow) 12px 12px 0 0;
+    }
+
+    .border-box-shadow {
+        box-shadow: 0.6vmin 0.6vmin var(--accent-200), 1vmin 1vmin #000,
+        0.65vmin 1vmin #000, 1vmin 0.65vmin #000;
+    }
+
+    .box-shadow-test {
+        /*box-shadow: 6px 6px 0 0 var(--accent-100);*/
+    }
+
+    .box-shadow-multi-layers-1{
+        box-shadow:
+                var(--accent-800) 10px -10px 0px -3px,
+                var(--color-fg) 8px -10px 0px 1px,
+                var(--accent-200) 20px -20px 0px -3px,
+                var(--color-fg)  20px -20px 0px 1px,
+                var(--accent-100) 30px -30px 0px -3px,
+                var(--color-fg)  30px -30px 0px 1px
+    }
+
+    .card-old{
+        /*margin: 0 var(--space-xl);*/
+        padding: var(--space-xl);
+        min-height: 40rem;
+    }
+
+    .card{
+    padding: var(--space-xs)
+    }
+
     .container {
         margin-inline: auto;
         width: min(68rem, 100% - var(--space-l));
