@@ -751,12 +751,13 @@
         display: flex;
         gap: var(--space-s);
         justify-content: space-between;
-        padding: 0 var(--space-xl);
+
     }
 
     @media screen and (min-width: 45em) {
         .site-footer__inner {
             justify-content: space-between;
+            padding: 0 var(--space-xl);
         }
     }
     .site-footer__item, .theme-switch {
