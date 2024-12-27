@@ -1216,10 +1216,6 @@
         padding: var(--space-xs);
     }
 
-    .padding-1 {
-        padding: var(--space-m) var(--space-l);
-    }
-
     .padding-x-1{
       padding: 0 0.6rem
     }
