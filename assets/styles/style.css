@@ -592,8 +592,23 @@
         }
     }
 
+    .experience-table {
+    }
+
+        @media screen and (min-width: 45em) {
+    .experience-table{
+        padding: var(--space-m) var(--space-l);
+    }
+    }
+
     .experience-table-wrapper {
-        padding: var(--space-xl);
+        padding: var(--space-xs);
+    }
+
+    @media screen and (min-width: 45em) {
+        .experience-table-wrapper {
+            padding: var(--space-xl);
+        }
     }
     .experience__job {
         display: block;
