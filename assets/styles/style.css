@@ -1016,6 +1016,10 @@
         border-color: var(--accent-200);
     }
 
+    .border-block-1 {
+        border-block: 3px solid black;
+    }
+
     .border-1 {
         border: 3px solid black;
     }
