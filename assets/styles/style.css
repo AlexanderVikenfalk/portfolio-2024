@@ -343,9 +343,15 @@
 }
 
 @layer elements {
+    @media screen and (min-width: 45em) {
+    .hero{
+        margin-block: var(--space-3xl)
+    }
+    }
     .hero__image {
         margin-inline: auto;
-        /*max-width: 25rem;*/
+        min-width: 16rem;
+        max-width: 25rem;
     }
 
     .hero__intro > h3 {
