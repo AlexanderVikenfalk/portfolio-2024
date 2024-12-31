@@ -590,7 +590,9 @@
         }
     }
 
-    .experience-table {
+    .experience-table{
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
     }
 
         @media screen and (min-width: 45em) {
