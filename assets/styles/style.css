@@ -98,6 +98,9 @@
         /*--accent-200: oklch(0.78 0.14 234);*/
         /*--accent-100: oklch(0.78 0.14 318); */
 
+        --color-primary-dark: rgb(22, 27, 50);
+        --color-primary-light: oklch(95.58% 0.0117 231.65);
+
         /*#FFC9F0*/
         --accent-900: #8CFFAD;
         --accent-800: oklch(89.48% 0.07886862083483745 336.4736891030262);
