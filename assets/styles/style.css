@@ -123,9 +123,7 @@
         --accent-dark-mode-800: oklch(34% 0.14 13);
         --accent-dark-mode-200: oklch(34% 0.14 240);
         --accent-dark-mode-100: oklch(34% 0.14 316);
-        --accent-dark-mode-test: oklch(28% 0.02 300);
 
-        --icon-filter-invert: 100%;
         --icon-url-sun: url('../icons/sun-light.svg');
         --icon-url-moon: url('../icons/half-moon.svg');
 
@@ -172,19 +170,16 @@
 
         --theme-switcher-symbol-active: var(--icon-url-sun);
         --color-caption-bg: var(--color-neutral-100);
-        /*--color-bg: oklch(14.71% 0.0168 226.66);*/
-        --color-bg: oklch(0.28 0.02 284.92);
+        --color-bg: rgb(22, 27, 50);
         --color-fg: oklch(95.58% 0.0117 231.65);
-        --color-footer-bg: var(--color-fg);
+        --color-footer-bg: var(--color-bg);
         --color-section-bg: oklch(17.2% 0.0244 226.11);
         --color-image-border: var(--color-neutral-800);
         --color-icon-hover: var(--color-neutral-500);
         --color-line-effect: var(--color-neutral-300);
-        --color-change-1: var(--accent-dark-mode-800);
-        --color-change-2: var(--accent-dark-mode-100);
-        --color-change-3: var(--accent-dark-mode-200);
         --color-box-shadow: var(--color-neutral-100);
         --color-table-separator: var(--color-neutral-900);
+        --icon-filter-invert: 100%;
     }
 
     :root:has(#theme-switch:checked) {
@@ -197,9 +192,6 @@
         --color-image-border: var(--color-neutral-200);
         --color-icon-hover: var(--color-primary-950);
         --color-line-effect: var(--color-neutral-900);
-        --color-change-1: var(--accent-800);
-        --color-change-2: var(--accent-100);
-        --color-change-3: var(--accent-200);
         --icon-filter-invert: 0;
         --color-table-separator: var(--color-neutral-500);
     }
