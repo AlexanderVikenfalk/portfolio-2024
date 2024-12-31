@@ -217,17 +217,18 @@ animations;
         }
 
         :root:has(#theme-switch:checked) {
-            --theme-switcher-symbol-active: var(--icon-url-moon);
-            --color-caption-bg: oklch(95.95% 0.0167 230.9);
-            --color-bg: oklch(97.2% 0.0092 232.36);
-            --color-fg: oklch(17.06% 0.016 227.24);
+            --theme-switcher-symbol-active: var(--icon-url-sun);
+            --color-caption-bg: var(--color-neutral-100);
+            --color-bg: rgb(22, 27, 50);
+            --color-fg: oklch(95.58% 0.0117 231.65);
             --color-footer-bg: var(--color-bg);
-            --color-section-bg: oklch(95.95% 0.0167 230.9);
-            --color-image-border: var(--color-neutral-200);
-            --color-icon-hover: var(--color-primary-950);
-            --color-line-effect: var(--color-neutral-900);
-            --icon-filter-invert: 0;
-            --color-table-separator: var(--color-neutral-500);
+            --color-section-bg: oklch(17.2% 0.0244 226.11);
+            --color-image-border: var(--color-neutral-800);
+            --color-icon-hover: var(--color-neutral-500);
+            --color-line-effect: var(--color-neutral-300);
+            --color-box-shadow: var(--color-neutral-100);
+            --color-table-separator: var(--color-neutral-900);
+            --icon-filter-invert: 100%;
         }
     }
 
@@ -1084,12 +1085,12 @@ animations;
 
     .box-shadow-multi-layers-1 {
         box-shadow:
-                var(--accent-800) 10px -10px 0px -3px,
-                var(--color-fg) 8px -10px 0px 1px,
-                var(--accent-200) 20px -20px 0px -3px,
-                var(--color-fg) 20px -20px 0px 1px,
-                var(--accent-100) 30px -30px 0px -3px,
-                var(--color-fg) 30px -30px 0px 1px
+                var(--accent-800) 10px -10px 0 -3px,
+                var(--color-fg) 8px -10px 0 1px,
+                var(--accent-200) 20px -20px 0 -3px,
+                var(--color-fg) 20px -20px 0 1px,
+                var(--accent-100) 30px -30px 0 -3px,
+                var(--color-fg) 30px -30px 0 1px
     }
 
     .card-old {
