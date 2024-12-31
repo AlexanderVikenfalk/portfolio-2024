@@ -741,7 +741,7 @@
         }
     }
 
-    .social-links img, .site-footer__home img {
+    .social-links img, .site-footer__home img, .swirly-arrow:before {
         filter: invert(var(--icon-filter-invert));
     }
 
@@ -943,6 +943,9 @@
     aspect-ratio: 16/9;
 }
 
+    .fg-dark {
+        color: var(--color-primary-dark);
+    }
 
     .bg-peach {
         background-color: var(--accent-700);
@@ -1107,6 +1110,7 @@
     }
 
     .caption-inner {
+        color: var(--color-primary-dark);
         background-color: inherit;
         padding-top: var(--space-xs);
         font-size: var(--fs-300);
