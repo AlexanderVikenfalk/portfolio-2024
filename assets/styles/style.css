@@ -953,6 +953,14 @@ animations;
             --scale: 0;
         }
     }
+    @media (hover: none) {
+        .site-footer__item::before,
+        .site-footer__item::after,
+        .theme-switch::before,
+        .theme-switch::after {
+            display: none;
+        }
+    }
 }
 
 @layer utilities {
