@@ -61,7 +61,6 @@
 
 This portfolio was designed with a focused approach, adhering to several key principles:
 
-* **KISS Principle:** Keep the design simple and straightforward
 * **Quality Over Quantity:** Emphasize meaningful content and design
 * **Technical Challenge:**: Develop the website using only HTML and CSS
 * **Performance Optimization:** Achieve a 100-point Lighthouse score
