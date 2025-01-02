@@ -351,14 +351,15 @@ animations;
         text-align: left;
     }
 
+    .hero__header {
+        text-align: center;
+    }
+
     @media screen and (min-width: 45em) {
         .hero__header {
+            text-align: left;
             grid-column: 2;
             grid-row: 1;
-        }
-
-        .hero__header>h1 {
-            /*white-space: nowrap;*/
         }
 
         .hero__intro>h3 {
