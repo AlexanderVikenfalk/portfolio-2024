@@ -94,36 +94,19 @@ animations;
         --color-neutral-50: oklch(5% 0 264);
         --color-neutral-0: oklch(0 0 264);
 
-        /*--accent-800: oklch(0.78 0.14 0);*/
-        /*--accent-700: oklch(0.78 0.14 20);*/
-        /*--accent-600: oklch(0.78 0.14 56);*/
-        /*--accent-400: oklch(0.78 0.14 114);*/
-        /*--accent-500: oklch(0.78 0.14 76);*/
-        /*--accent-300: oklch(0.78 0.14 132);*/
-        /*--accent-200: oklch(0.78 0.14 234);*/
-        /*--accent-100: oklch(0.78 0.14 318); */
-
-        --color-primary-dark: rgb(22, 27, 50);
+        --color-primary-dark: oklch(23% 0.0452 273.09);
         --color-primary-light: oklch(95.58% 0.0117 231.65);
 
-        /*#FFC9F0*/
-        --accent-900: #8CFFAD;
+        --accent-900: oklch(91.13% 0.1548 151.55);
         --accent-800: oklch(89.48% 0.07886862083483745 336.4736891030262);
-        --accent-700: #8CA5FF;
-        --accent-600: #FF8CDE;
-        --accent-550: #fdfd96;
-        /*FFE68C*/
+        --accent-700: oklch(74.01% 0.13349035624122288 271.06711992815286);
+        --accent-600: oklch(78.96% 0.16867277559044624 338.9491136717834);
+        --accent-550: oklch(97.23% 0.1256 108.52);
         --accent-500: oklch(92.63% 0.1134 94.36);
-        --accent-400: #ABFF9D;
-        --accent-300: #FFC09D;
-        /*9DDCFF*/
+        --accent-400: oklch(92.32% 0.1528569373852482 140.92698894545197);
+        --accent-300: oklch(85.68% 0.08657057701527926 50.23705263425665);
         --accent-200: oklch(86.41% 0.0802664862424282 233.24785956339008);
-        --accent-100: #F19DFF;
-
-        --accent-muted-800: #FFE2F3;
-        --accent-muted-300: #ADFACE;
-        --accent-muted-200: #B3D6FF;
-        --accent-muted-100: #D9BEFF;
+        --accent-100: oklch(81.27% 0.1596 321.69);
 
         --accent-dark-mode-800: oklch(34% 0.14 13);
         --accent-dark-mode-200: oklch(34% 0.14 240);
@@ -175,10 +158,9 @@ animations;
 
         --theme-switcher-symbol-active: var(--icon-url-sun);
         --color-caption-bg: var(--color-neutral-100);
-        --color-bg: rgb(22, 27, 50);
-        --color-fg: oklch(95.58% 0.0117 231.65);
+        --color-bg: var(--color-primary-dark);
+        --color-fg: var(--color-primary-light);
         --color-footer-bg: var(--color-bg);
-        --color-section-bg: oklch(17.2% 0.0244 226.11);
         --color-image-border: var(--color-neutral-800);
         --color-icon-hover: var(--color-neutral-500);
         --color-line-effect: var(--color-neutral-300);
@@ -189,11 +171,9 @@ animations;
 
     :root:has(#theme-switch:checked) {
         --theme-switcher-symbol-active: var(--icon-url-moon);
-        --color-caption-bg: oklch(95.95% 0.0167 230.9);
-        --color-bg: oklch(97.2% 0.0092 232.36);
-        --color-fg: oklch(17.06% 0.016 227.24);
+        --color-bg: var(--color-primary-light);
+        --color-fg: var(--color-primary-dark););
         --color-footer-bg: var(--color-bg);
-        --color-section-bg: oklch(95.95% 0.0167 230.9);
         --color-image-border: var(--color-neutral-200);
         --color-icon-hover: var(--color-primary-950);
         --color-line-effect: var(--color-neutral-900);
@@ -204,11 +184,9 @@ animations;
     @media (prefers-color-scheme: light) {
         :root {
             --theme-switcher-symbol-active: var(--icon-url-moon);
-            --color-caption-bg: oklch(95.95% 0.0167 230.9);
-            --color-bg: oklch(97.2% 0.0092 232.36);
-            --color-fg: oklch(17.06% 0.016 227.24);
+            --color-bg: var(--color-primary-light);
+            --color-fg: var(--color-primary-dark););
             --color-footer-bg: var(--color-bg);
-            --color-section-bg: oklch(95.95% 0.0167 230.9);
             --color-image-border: var(--color-neutral-200);
             --color-icon-hover: var(--color-primary-950);
             --color-line-effect: var(--color-neutral-900);
@@ -219,10 +197,9 @@ animations;
         :root:has(#theme-switch:checked) {
             --theme-switcher-symbol-active: var(--icon-url-sun);
             --color-caption-bg: var(--color-neutral-100);
-            --color-bg: rgb(22, 27, 50);
-            --color-fg: oklch(95.58% 0.0117 231.65);
+            --color-bg: var(--color-primary-dark);
+            --color-fg: var(--color-primary-light);
             --color-footer-bg: var(--color-bg);
-            --color-section-bg: oklch(17.2% 0.0244 226.11);
             --color-image-border: var(--color-neutral-800);
             --color-icon-hover: var(--color-neutral-500);
             --color-line-effect: var(--color-neutral-300);
@@ -352,7 +329,7 @@ animations;
     }
 
     .hero__header {
-        text-align: center;
+        text-align: left;
     }
 
     @media screen and (min-width: 45em) {
@@ -369,12 +346,6 @@ animations;
             text-align: left;
         }
 
-    }
-
-    @keyframes scroll {
-        to {
-            transform: translateX(calc(-100% - var(--gap)));
-        }
     }
 
     .techstack {
@@ -429,13 +400,10 @@ animations;
 
     .techstack__icon {
         width: 2.4rem;
-        /* Smaller icon size */
         height: 2.4rem;
-        /* Explicitly set height to match width */
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
         -webkit-mask-size: contain;
-        /* Ensure icon fits within dimensions */
         mask-size: contain;
         -webkit-mask-position: center;
         mask-position: center;
@@ -628,7 +596,6 @@ animations;
         display: block;
         position: relative;
         padding: var(--space-s) var(--space-s) var(--space-s) 40px;
-        /* Left padding for the arrow */
         cursor: pointer;
         color: inherit;
         text-decoration: none;
@@ -700,19 +667,14 @@ animations;
 
     .experience__job {
         display: block;
-        /* Make the link behave like a block element */
         text-decoration: none;
-        /* Remove default underline */
         color: inherit;
-        /* Inherit text color */
         position: relative;
         padding-left: 30px;
-        /* Space for the arrow */
         cursor: pointer;
         transition: color 0.2s ease;
     }
 
-    /* Add arrow with pseudo-element */
     .experience__job::before {
         content: "";
         position: absolute;
@@ -735,7 +697,6 @@ animations;
 
     .experience__job:hover {
         color: var(--color-neutral-700);
-        /* Optional hover color change */
     }
 
     .experience__job .experience__job-list {
@@ -996,7 +957,7 @@ animations;
         background-color: var(--accent-200);
     }
 
-    .bg-purple {
+    .bg-pink {
         background-color: var(--accent-100);
     }
 
@@ -1089,10 +1050,6 @@ animations;
         0.65vmin 1vmin #000, 1vmin 0.65vmin #000;
     }
 
-    .box-shadow-test {
-        /*box-shadow: 6px 6px 0 0 var(--accent-100);*/
-    }
-
     .box-shadow-multi-layers-1 {
         box-shadow:
                 var(--accent-800) 10px -10px 0 -3px,
@@ -1103,12 +1060,6 @@ animations;
                 var(--color-fg) 30px -30px 0 1px
     }
 
-    .card-old {
-        /*margin: 0 var(--space-xl);*/
-        padding: var(--space-xl);
-        min-height: 40rem;
-    }
-
     .card {
         padding: var(--space-xs)
     }
@@ -1116,6 +1067,18 @@ animations;
     .container {
         margin-inline: auto;
         width: min(74rem, 100% - var(--space-l));
+    }
+
+    .container-inner {
+        position: relative;
+    }
+
+    .container-inner::before {
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        inset: 0;
+        border: 3px solid black;
     }
 
     .full-bleed {
@@ -1355,17 +1318,9 @@ animations;
             margin-left: -56%
         }
     }
-
-}
-
-.container-inner {
-    position: relative;
-}
-
-.container-inner::before {
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 3px solid black;
+    @keyframes scroll {
+        to {
+            transform: translateX(calc(-100% - var(--gap)));
+        }
+    }
 }
